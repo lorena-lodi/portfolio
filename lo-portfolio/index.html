@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorena Lodi de Oliveira | Portfólio</title>
+
+<!-- ============================================================
+     BOOTSTRAP 5 - CSS via CDN
+     Todo o visual da página vem só do Bootstrap: cores, grid,
+     espaçamento, componentes. Não usei nenhum CSS próprio.
+     ============================================================ -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons - pacote oficial de ícones do Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="90" tabindex="0">
+
+<!-- ============================================================
+     NAVBAR (componente Bootstrap)
+     Classes: navbar, navbar-expand-lg, navbar-dark, bg-danger,
+     container, navbar-toggler (menu "hambúrguer" no celular)
+     ============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portfólio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pedagogia">Pedagogia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ads">ADS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO / SOBRE MIM
+     Classes: bg-light, py-5 (padding), container, row, col-*
+     (sistema de grid do Bootstrap: divide a tela em 12 colunas)
+     ============================================================ -->
+<header id="sobre" class="bg-light py-5 mt-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold">𝙾𝚕𝚊́, 𝚎𝚞 𝚜𝚘𝚞 𝚊 𝙻𝚘𝚛𝚎𝚗𝚊 𝙻𝚘𝚍𝚒 𝚍𝚎 𝙾𝚕𝚒𝚟𝚎𝚒𝚛𝚊💗</h1>
+        <p class="lead">Curso duas faculdades ao mesmo tempo: <strong>Análise e Desenvolvimento de Sistemas</strong> e <strong>Pedagogia</strong>. Uno lógica e criatividade da tecnologia com o cuidado e a paciência de ensinar programando soluções digitais, como este próprio portfólio, e desenvolvendo a habilidade de explicar temas complexos de forma simples. Acredito que a tecnologia pode ser uma grande aliada da educação, e é isso que pretendo levar para o meu futuro profissional.</p>
+        <a href="#projetos" class="btn btn-danger btn-lg mt-2">Ver meus projetos</a>
+      </div>
+      <!-- Coluna de fotos ao lado do texto: grid Bootstrap (row-cols-2, g-2) -->
+      <div class="col-lg-4">
+        <div class="row row-cols-2 g-2">
+          <div class="col">
+            <div class="ratio ratio-1x1 rounded overflow-hidden shadow-sm"><img src="images/sobre1.jpeg" class="object-fit-cover" alt="Retrato de Lorena (1)"></div>
+          </div>
+          <div class="col">
+            <div class="ratio ratio-1x1 rounded overflow-hidden shadow-sm"><img src="images/sobre2.jpeg" class="object-fit-cover" alt="Retrato de Lorena (2)"></div>
+          </div>
+          <div class="col">
+            <div class="ratio ratio-1x1 rounded overflow-hidden shadow-sm"><img src="images/sobre3.jpeg" class="object-fit-cover" alt="Retrato de Lorena (3)"></div>
+          </div>
+          <div class="col">
+            <div class="ratio ratio-1x1 rounded overflow-hidden shadow-sm"><img src="images/sobre4.jpeg" class="object-fit-cover" alt="Retrato de Lorena (4)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     SEÇÃO PEDAGOGIA
+     Texto ao lado + CARROSSEL (componente Bootstrap: Carousel)
+     ============================================================ -->
+<section id="pedagogia" class="container my-5 pt-5">
+  <h2 class="text-center mb-4">𝙿𝚎𝚍𝚊𝚐𝚘𝚐𝚒𝚊</h2>
+  <div class="row align-items-center g-4">
+    <div class="col-md-5">
+      <p> Aqui um pouco do meu lado pedagógico: estágios, atividades em sala, projetos educacionais e momentos de aprendizado com crianças e outros educadores. A convivência com as crianças me ensina todos os dias a ouvir, a ter paciência e a encontrar jeitos criativos de ensinar. Para mim, ensinar é também aprender, e cada experiência na sala de aula me faz querer ser uma educadora cada vez melhor.</p>
+    </div>
+    <div class="col-md-7">
+      <div id="carrosselPedagogia" class="carousel slide" data-bs-ride="carousel" role="region" aria-label="Fotos de Pedagogia">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselPedagogia" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrosselPedagogia" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrosselPedagogia" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carrosselPedagogia" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active"><div class="ratio ratio-4x3"><img src="images/pedagogia1.jpeg" class="d-block w-100 object-fit-cover" alt="Atividade de movimento com crianças em sala" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="ratio ratio-4x3"><img src="images/pedagogia2.jpeg" class="d-block w-100 object-fit-cover" alt="Crianças em atividade de recreação com a professora" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="ratio ratio-4x3"><img src="images/pedagogia3.jpeg" class="d-block w-100 object-fit-cover" alt="Festa junina com alunos e professoras" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="ratio ratio-4x3"><img src="images/pedagogia4.jpeg" class="d-block w-100 object-fit-cover" alt="Registro da festa junina com a turma" loading="lazy"></div></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPedagogia" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Foto anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselPedagogia" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próxima foto</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO ADS (Análise e Desenvolvimento de Sistemas)
+     Texto ao lado + CARROSSEL, com imagem/texto invertidos
+     (order-md-*) só pra variar o layout.
+     ============================================================ -->
+<section id="ads" class="bg-light py-5">
+<div class="container">
+  <h2 class="text-center mb-4">𝙰𝚗𝚊́𝚕𝚒𝚜𝚎 𝚎 𝙳𝚎𝚜𝚎𝚗𝚟𝚘𝚕𝚟𝚒𝚖𝚎𝚗𝚝𝚘 𝚍𝚎 𝚂𝚒𝚜𝚝𝚎𝚖𝚊𝚜</h2>
+  <div class="row align-items-center g-4">
+    <div class="col-md-7 order-md-1">
+      <div id="carrosselAds" class="carousel slide" data-bs-ride="carousel" role="region" aria-label="Fotos de ADS">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselAds" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrosselAds" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active"><div class="ratio ratio-16x9 bg-white"><img src="images/ads1.png" class="d-block w-100 object-fit-contain" alt="Código do portfólio aberto no VS Code" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="ratio ratio-16x9 bg-white"><img src="images/ads2.png" class="d-block w-100 object-fit-contain" alt="Documentação do Bootstrap 5" loading="lazy"></div></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAds" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Foto anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselAds" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próxima foto</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-2">
+      <p>E aqui o lado da programação: telas de projetos e códigos. É aqui que eu aprendo a transformar ideias em sistemas de verdade, usando Java, banco de dados e tecnologias web, colocando a teoria em prática e criando soluções digitais.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============================================================
+     TECNOLOGIAS (badges do Bootstrap)
+     ============================================================ -->
+<section id="tecnologias" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">𝚃𝚎𝚌𝚗𝚘𝚕𝚘𝚐𝚒𝚊𝚜</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-2 fs-5">
+      <span class="badge text-bg-danger">Java</span>
+      <span class="badge text-bg-danger">HTML</span>
+      <span class="badge text-bg-danger">Bootstrap 5</span>
+      <span class="badge text-bg-danger">Git e GitHub</span>
+      <span class="badge text-bg-danger">Computação em Nuvem</span>
+      <span class="badge text-bg-danger">Ciência de Dados</span>
+      <span class="badge text-bg-danger">Estatística</span>
+      <span class="badge text-bg-danger">Automação Industrial</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJETOS (componente Bootstrap: Cards + Grid)
+     Classes: row, row-cols-*, col, card, card-body, card-title,
+     card-text, btn
+     ============================================================ -->
+<section id="projetos" class="container my-5 pt-5">
+  <h2 class="text-center mb-4">𝙼𝚎𝚞𝚜 𝙿𝚛𝚘𝚓𝚎𝚝𝚘𝚜</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="ratio ratio-16x9"><img src="images/projeto-portfolio.jpeg" class="card-img-top object-fit-cover" style="object-position: top;" alt="Captura de tela do portfólio" loading="lazy"></div>
+        <div class="card-body">
+          <h5 class="card-title">Portfólio Pessoal</h5>
+          <p class="card-text">Este próprio site, feito com HTML e Bootstrap 5: navbar responsiva, carrossel de fotos e cards de projetos.</p>
+          <a href="https://github.com/lorena-lodi" target="_blank" class="btn btn-danger">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="ratio ratio-16x9 bg-white"><img src="images/radarmind.jpeg" class="card-img-top object-fit-contain p-3" alt="Logo do projeto RadarMind" loading="lazy"></div>
+        <div class="card-body">
+          <h5 class="card-title">RadarMind</h5>
+          <p class="card-text">Sistema de Integração Corporativa entre Empresa Matriz e Subempresas do setor de Agronegócio.</p>
+          <a href="https://github.com/L-pf0/Projeto-Integrador-2---PINT" target="_blank" class="btn btn-danger">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="ratio ratio-16x9"><img src="https://placehold.co/400x225/dc3545/ffffff?text=SanctusApp" class="card-img-top object-fit-cover" alt="Imagem do projeto SanctusApp" loading="lazy"></div>
+        <div class="card-body">
+          <h5 class="card-title">SanctusApp</h5>
+          <p class="card-text">Projeto desenvolvido em equipe para a disciplina de Projeto Integrador.</p>
+          <a href="https://github.com/matheushvitor10/SanctusAPP-pint1" target="_blank" class="btn btn-danger">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTATO / RODAPÉ
+     Classes: bg-dark, text-white, d-flex, justify-content-center,
+     gap-4 (utilitários de flexbox e espaçamento)
+     ============================================================ -->
+<footer id="contato" class="bg-danger text-white text-center py-5 mt-5">
+  <h2 class="mb-4">𝙲𝚘𝚗𝚝𝚊𝚝𝚘</h2>
+  <div class="d-flex justify-content-center gap-4 fs-2">
+    <a href="https://www.linkedin.com/in/lorena-lodi-3412493b6/" target="_blank" class="text-white" title="LinkedIn" aria-label="Abrir meu perfil no LinkedIn (abre em nova aba)">
+      <i class="bi bi-linkedin" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/lorena-lodi" target="_blank" class="text-white" title="GitHub" aria-label="Abrir meu perfil no GitHub (abre em nova aba)">
+      <i class="bi bi-github" aria-hidden="true"></i>
+    </a>
+  </div>
+  <p class="mt-4 mb-0"><small>&copy; 2026 Lorena Lodi de Oliveira</small></p>
+</footer>
+
+<!-- ============================================================
+     BOOTSTRAP JS (necessário para: navbar responsiva/toggler,
+     carrossel funcionar e trocar de slide, etc.)
+     Precisa vir DEPOIS do HTML, antes de fechar o body.
+     ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
